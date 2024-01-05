@@ -99,7 +99,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT -1
+#define SERIAL_PORT 1
 
 /**
  * Serial Port Baud Rate
@@ -121,7 +121,7 @@
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 1
+#define SERIAL_PORT_2 -1
 //#define BAUDRATE_2 250000   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
 
 /**
@@ -649,8 +649,8 @@
 
 // Enable PIDTEMP for PID control or MPCTEMP for Predictive Model.
 // temperature control. Disable both for bang-bang heating.
-#define PIDTEMP          // See the PID Tuning Guide at https://reprap.org/wiki/PID_Tuning
-//#define MPCTEMP        // ** EXPERIMENTAL **
+//#define PIDTEMP          // See the PID Tuning Guide at https://reprap.org/wiki/PID_Tuning
+#define MPCTEMP        // ** EXPERIMENTAL **
 
 #define BANG_MAX 255     // Limits current to nozzle while in bang-bang mode; 255=full current
 #define PID_MAX BANG_MAX // Limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 255=full current
@@ -1270,7 +1270,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
