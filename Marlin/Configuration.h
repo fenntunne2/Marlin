@@ -136,7 +136,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Nimbus 2024.1"
+#define CUSTOM_MACHINE_NAME "Nimbus 2024.2"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1180,7 +1180,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 397 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.20, 80.14, 800, 397 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -2145,13 +2145,13 @@
  *    +-------------->X     +-------------->X     +-------------->Y
  *     XY_SKEW_FACTOR        XZ_SKEW_FACTOR        YZ_SKEW_FACTOR
  */
-//#define SKEW_CORRECTION
+#define SKEW_CORRECTION
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 282.8427124746
-  #define XY_DIAG_BD 282.8427124746
-  #define XY_SIDE_AD 200
+  #define XY_DIAG_AC 99.8167
+  #define XY_DIAG_BD 99.8767
+  #define XY_SIDE_AD 70.5374
 
   // Or, set the XY skew factor directly:
   //#define XY_SKEW_FACTOR 0.0
